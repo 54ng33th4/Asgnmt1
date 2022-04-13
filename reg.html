@@ -4,17 +4,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Kerala</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/1c2c2462bf.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="/images/logo0.png">
     <link rel="stylesheet" href="./css/index1.css">
-    <link rel="stylesheet" href="./css/reg.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
-    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"> -->
-  </head>
+    <title>Document</title>
+    <style>
+        body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    margin: 15px 0 25px;
+    text-align: center;
+    font-size: 30px;
+}
+input{
+    color:#022255 !important;
+}
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus{
+    box-shadow: 0 0 5px rgba(246, 8, 118, .8);
+    border: 1px solid rgba(246, 8, 118, .8);
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form-horizontal{
+    width: 320px;
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .5);
+}
+.control-label{
+    text-align: left !important;
+    padding-bottom: 4px;
+}
+.progress{
+    height: 3px !important;
+}
+.form-group{
+    margin-bottom: 10px;
+}
+.show-pass{
+    position: relative;
+    left: 93%;
+}
+.progress-bar-danger{
+    background-color: #e90f10;
+}
+.progress-bar-warning{
+    background-color: #ffad00;
+}
+.progress-bar-success{
+    background-color: #02b502;
+}
+#form {
+    width: 300px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-size: 12px;
+}
+#form h1 {
+    color: #0f2027;
+    text-align: center;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color: rgb(41, 57, 194);
+    border: none;
+    border-radius: 4px;
+}
+.login-btn:hover{
+    background-image: linear-gradient(to right, rgba(255,0,111,.8),rgba(247,2,4,.8)) !important;
+    color:#fff;
+}   
+.fa-eye{
+    color:#022255;
+    cursor: pointer;
+}
+.far{
+    margin-top: 5px;
+}
+.ex-account p a{
+    color: #ff386e;
+    text-decoration: underline;
+}
+.fa-circle{
+    font-size: 6px;
+}
+.fa-check{
+    color: #02b502;
+}
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+    </style>
+</head>
 <body>
   <header>
     <!-- nav -->
@@ -34,14 +163,14 @@
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="dist.html">Explore</a>
+                <a class="nav-link" href="dis.html">Explore</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" target="_blank" href="https://en.wikipedia.org/wiki/Tourism_in_Kerala">Tourist Spots</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link disabled">Contact</a>
-                </li>
+                </li> -->
             </ul>
             </div>
             <div>
@@ -55,44 +184,249 @@
     </nav>
     <!-- /nav -->
   </header>
-  <div class="container">
-    <!-- <center> -->
-    <form action="index.html" class="form1">
-          <div class="title"><h1>Registration Form</h1>
-            <p id="desc">Kindly fill in this form to create an account.</p>
-            <hr>
-            <div class="content">
-              <form action="#">
-                <div class="user-details">
-                  <div class="input-box">
-                    <span class="details">Username</span>
-                    <input type="text" placeholder="Enter your username" id="uname" required>
-                  </div>
-                  <div class="input-box">
-                    <span class="details">Email</span>
-                    <input type="text" placeholder="Enter your email" id="email" required>
-                  </div>
-                  <div class="input-box">
-                    <span class="details">Phone Number</span>
-                    <input type="text" placeholder="Enter your number" id="phno" required>
-                  </div>
-                  <div class="input-box">
-                    <span class="details">Password</span>
-                    <input type="text" onkeyup="validate();" placeholder="Enter your password" id="pwd" required>
-                  </div>
-                  <div class="input-box">
-                    <span class="details">Confirm Password</span>
-                    <input type="text" placeholder="Confirm your password" id="pwd2" required>
-                  </div>
-                </div>
-                <div class="button">
-                  <input type="submit" value="Register">
-                </div>
-              </form>
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Registration</h1>
+            <fieldset>
+                <div class="form-group">
+            <div class="input-control">
+                <label for="username" class="col-md-12 control-label">Username</label>
+                <input id="username" name="username" type="text" class="form-control input-md">
+                <div class="error"></div>
             </div>
-          </div>
-    </form>
-  <!-- </center> -->
-</div> 
+            <div class="input-control">
+                <label for="phoneno" class="col-md-12 control-label">Mobile Number</label>
+                <input id="phoneno" name="phoneno" type="text" class="form-control input-md">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email" class="col-md-12 control-label">Email</label>
+                <input id="email" name="email" type="text" class="form-control input-md">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password" class="col-md-12 control-label">Password</label>
+                <input id="password"name="password" type="password" class="form-control input-md">
+                <div class="error"></div>
+                <span class="show-pass" onclick="toggle()">
+                    <i class="far fa-eye" onclick="myFunction(this)"></i>
+                </span>
+                <div id="popover-password">
+                    <p><span id="result"></span></p>
+                    <div class="progress">
+                        <div id="passwordStrength" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+                    </div>
+                </div>
+                <ul class="list-unstyled">
+                    <li>
+                        <span class="low-upper-case">
+                            <i class="fas fa-circle" aria-hidden="true"></i>
+                            Lowercase &amp; Uppercase
+                        </span>
+                    </li>
+                    <li>
+                        <span class="one-number">
+                            <i class="fas fa-circle" aria-hidden="true"></i>
+                            Number (0-9)
+                        </span>
+                    </li>
+                    <li>
+                        <span class="one-special-char">
+                            <i class="fas fa-circle" aria-hidden="true"></i>
+                            Special character (!@#$^&*)
+                        </span>
+                    </li>
+                    <li>
+                        <span class="eight-character">
+                            <i class="fas fa-circle" aria-hidden="true"></i>
+                            Atleast 8 character
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="input-control">
+                <label for="password2" class="col-md-12 control-label">Retype Password</label>
+                <input id="password2"name="password2" type="password" class="form-control input-md">
+                <div class="error"></div>
+            </div>
+            <button type="submit" class="btn login-btn btn-block">Sign Up</button>
+            <div class="ex-account text-center">
+                <p>Already have an account? Signin <a href="login.html">here.</a></p>
+            </div>
+        </div>
+        </fieldset>
+        </form>
+    </div>
+    <script>
+
+let state = false;
+// let password = document.getElementById('password');
+let password = document.getElementById('password');
+let passwordStrength = document.getElementById('passwordStrength');
+let lowerUpperCase = document.querySelector('.low-upper-case i');
+let number = document.querySelector('.one-number i');
+let specialChar = document.querySelector('.one-special-char i');
+let eightChar = document.querySelector('.eight-character i');
+
+function myFunction(show){
+    show.classList.toggle('fa-eye-slash');
+}
+function toggle(){
+    if(state){
+        password.setAttribute("type","password");
+        state = false;
+    }
+    else{
+        password.setAttribute("type","text");
+        state = true;
+    }
+}
+
+password.addEventListener('keyup',function(){
+    let pass = password.value;
+    checkStrength(pass);
+})
+
+function checkStrength(password){
+    let strength = 0;
+    // if password contains lower and upper case character
+    if(password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)){
+        strength == 1;
+        lowerUpperCase.classList.remove('fa-circle');
+        lowerUpperCase.classList.add('fa-check');
+    }
+    else{
+        lowerUpperCase.classList.add('fa-circle');
+        lowerUpperCase.classList.remove('fa-check');
+    }
+    //if password has a number
+    if(password.match(/([0-9])/)){
+        strength == 1;
+        number.classList.remove('fa-circle');
+        number.classList.add('fa-check');
+    }else{
+        number.classList.add('fa-circle');
+        number.classList.remove('fa-check');
+    }
+    //if password has one special character
+    if(password.match(/([!,%,&,@,#,$,^,*,?,_,-])/)){
+        strength == 1;
+        specialChar.classList.remove('fa-circle');
+        specialChar.classList.add('fa-check');
+    }else{
+        specialChar.classList.add('fa-circle');
+        specialChar.classList.remove('fa-check');
+    }
+    //if password is more than 7
+    if(password.length > 7){
+        strength == 1;
+        eightChar.classList.remove('fa-circle');
+        eightChar.classList.add('fa-check');
+    }
+    else{
+        eightChar.classList.add('fa-circle');
+        eightChar.classList.remove('fa-check');
+    }
+     if(strength == 0){
+         passwordStrength.style = 'width: 0%';
+     }
+     else if(strength == 2){
+         passwordStrength.classList.remove('progress-bar-warning');
+         passwordStrength.classList.remove('progress-bar-success');
+         passwordStrength.classList.add('progress-bar-danger');
+         passwordStrength.style = 'width: 10%';
+     }
+     else if(strength == 3){
+         passwordStrength.classList.remove('progress-bar-success');
+         passwordStrength.classList.remove('progress-bar-danger');
+         passwordStrength.classList.add('progress-bar-warning');
+         passwordStrength.style = 'width: 60%';
+     }
+     else if(strength == 4){
+         passwordStrength.classList.remove('progress-bar-warning');
+         passwordStrength.classList.remove('progress-bar-danger');
+         passwordStrength.classList.add('progress-bar-success');
+         passwordStrength.style = 'width: 100%';
+     }
+}
+
+const form = document.getElementById('form');
+const username = document.getElementById('username');
+const phoneno = document.getElementById('phoneno');
+const email = document.getElementById('email');
+
+const password2 = document.getElementById('password2');
+form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    validateInputs();
+});
+const setError = (element, message) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = message;
+    inputControl.classList.add('error');
+    inputControl.classList.remove('success')
+}
+const setSuccess = element => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = '';
+    inputControl.classList.add('success');
+    inputControl.classList.remove('error');
+};
+const isValidEmail = email => {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+const isValidMobile = phoneno => {
+    const re = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+    return re.test(String(phoneno));
+}
+const validateInputs = () => {
+    const usernameValue = username.value.trim();
+    const phonenoValue = phoneno.value.trim();
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
+    const password2Value = password2.value.trim();
+
+    if(usernameValue === '') {
+        setError(username, 'Username is required');
+    } else {
+        setSuccess(username);
+    }
+    if(phonenoValue === '') {
+        setError(phoneno, 'Mobile No. is required');
+    } else if (!isValidMobile(phonenoValue)) {
+        setError(phoneno, 'Formats: XXX XXX XXXX / XXX-XXX-XXXX / XXX.XXX.XXXX');
+    } else {
+        setSuccess(phoneno);
+    }
+if(emailValue === '') {
+        setError(email, 'Email is required');
+    } else if (!isValidEmail(emailValue)) {
+        setError(email, 'Provide a valid email address');
+    } else {
+        setSuccess(email);
+    }
+if(passwordValue === '') {
+        setError(password, 'Password is required');
+    } else if (passwordValue.length < 8 ) {
+        setError(password, 'Password must be at least 8 character.')
+    } 
+    else {
+        setSuccess(password);
+    }
+if(password2Value === '') {
+        setError(password2, 'Please confirm your password');
+    } else if (password2Value !== passwordValue) {
+        setError(password2, "Passwords doesn't match");
+    } else {
+        setSuccess(password2);
+    }
+};
+    </script>
 </body>
 </html>
