@@ -1,0 +1,33 @@
+.col{
+    text-align: center;
+    border: solid;
+    padding: 2%;
+    background-color: rgb(224, 203, 243);
+}
+.d{
+    color: darkolivegreen;
+    text-decoration: none;
+    font-family:cursive;
+}
+/* .p1-box{
+    border:2px solid rgb(10, 78, 10);
+    border-radius: 15px;
+    width: 19%;
+    height: 28em;
+    float:left;
+    margin-left: 8px;
+    padding: 5px;
+    background-color: rgb(180, 240, 132);
+}
+.p1-box h3{
+    text-align: center;
+    font-size: 15px;
+}
+.p1-box p{
+    line-height: 1.25em;
+    text-align: justify;
+    margin-bottom: 0;
+}
+.p1-box a{
+    color: red;
+} */
